@@ -68,8 +68,6 @@ app.post('/sms', (req, res) => {
   res.end(twiml.toString());
 });
 
-
-
 /*
 whenever someone goes to our wesite and requests 
 www.app.com/users, it will load everything under "usersRouter"
