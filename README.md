@@ -9,12 +9,10 @@ Our project for HooHacks 2020.
 An app that is great
 
 ## The possibilities
-- Turn on a lightbulb by sending a text.
-- Get your bank balance.
-- Write plugins to make it do more stuff.
+- Highly Scalable Anxiety Tracking Solution
 
 ## Nodes
-- SMS
+- SMS (Twilio)
 - Facebook Messenger
 - Discord
 
