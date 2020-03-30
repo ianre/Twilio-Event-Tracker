@@ -5,14 +5,9 @@ Every component is going to start he same wat, wer're going to
  - import component from react
 
  using React router, we're going to import retes
-
-
 */
-
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
-
 // navbar = name of component
 // all components extend component
 export default class Navbar extends Component {

@@ -52,7 +52,6 @@ const usersRouter = require('./routes/users');
 const eventsRouter = require('./routes/events');
 
 
-
 // TWILIO
 const http = require('http');
 const MessagingResponse = require('twilio').twiml.MessagingResponse;
@@ -66,6 +65,24 @@ app.post('/sms', (req, res) => {
   twiml.message(sendMessage);
   res.writeHead(200, {'Content-Type': 'text/xml'});
   res.end(twiml.toString());
+
+});
+
+
+// more twilio stuff
+//var express = require('express');
+var bodyParser = require('body-parser');
+//var app = express();
+app.use(bodyParser.urlencoded({extended: false}));
+app.post('/hack', (req, res) => {
+    var inbMsg = req.body.Body.toLowerCase().trim();
+    if(inbMsg == "matcha") {
+        res.send("<Response><Message>Responding to matcha</Message></Response>");
+    }
+    res.send("<Response><Message>Else respond with this</Message></Response>");
+});
+app.listen(1337, () => {
+    console.log("Express server listening on port 1337");
 });
 
 
