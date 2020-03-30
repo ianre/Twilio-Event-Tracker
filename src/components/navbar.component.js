@@ -15,8 +15,8 @@ export default class Navbar extends Component {
   // basicallt the navbar from bootstrap adapted to react
   render() {
     return (
-      <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-        <Link to="/" className="navbar-brand"><strong>Pick Me Up</strong>  Anxiety Tracker </Link>
+      <nav className="navbar navbar-dark bg-primary navbar-expand-lg">
+        <Link to="/" className="navbar-brand"><strong  >Pick Me Up</strong>  Anxiety Tracker </Link>
         <div className="collpase navbar-collapse">
         <ul className="navbar-nav mr-auto">
           <li className="navbar-item">
@@ -27,6 +27,9 @@ export default class Navbar extends Component {
           </li>
           <li className="navbar-item">
           <Link to="/user" className="nav-link">Create User</Link>
+          </li>
+          <li className="navbar-item">
+          <Link to="/about" className="nav-link">About</Link>
           </li>
         </ul>
         </div>
