@@ -54,6 +54,7 @@ const eventsRouter = require('./routes/events');
 
 
 // TWILIO
+/*
 const http = require('http');
 const MessagingResponse = require('twilio').twiml.MessagingResponse;
 //const MessagingResponse = require('twilio').TwimlResponse.MessagingResponse; // this should be twiml.MessagingResponse
@@ -67,6 +68,7 @@ app.post('/sms', (req, res) => {
   res.writeHead(200, {'Content-Type': 'text/xml'});
   res.end(twiml.toString());
 });
+*/
 
 /*
 whenever someone goes to our wesite and requests 
